@@ -45,7 +45,7 @@ const Hero = () => {
 
       {/* Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
-        <p className="text-white font-['Montserrat'] text-[18px] md:text-[20px] text-center px-4 max-w-[700px] leading-relaxed">
+        <p className="text-white font-['Montserrat'] text-[22px] md:text-[28px] text-center px-4 max-w-[800px] leading-relaxed">
           Building and delivering cinema across platforms.
         </p>
       </div>
