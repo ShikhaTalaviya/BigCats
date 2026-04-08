@@ -45,9 +45,9 @@ const FoundersDesk = () => {
           <div className="text-center">
             <div className="aspect-[3/4] overflow-hidden rounded-sm mb-4">
               <img
-                src="https://images.pexels.com/photos/36363694/pexels-photo-36363694.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                src="https://customer-assets.emergentagent.com/job_entertainment-gold/artifacts/jgymeoy4_WhatsApp%20Image%202026-04-08%20at%208.04.19%20PM.jpeg"
                 alt="Neha Kshatriya"
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                className="w-full h-full object-cover hover:scale-105 transition-all duration-500"
               />
             </div>
             <h3 className="text-[#C9A84C] font-['Playfair_Display'] font-semibold text-[20px] mb-1">
@@ -84,9 +84,9 @@ const FoundersDesk = () => {
           <div className="text-center">
             <div className="aspect-[3/4] overflow-hidden rounded-sm mb-4">
               <img
-                src="https://images.pexels.com/photos/30732874/pexels-photo-30732874.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                src="https://customer-assets.emergentagent.com/job_entertainment-gold/artifacts/psa92ivq_WhatsApp%20Image%202026-04-08%20at%208.02.49%20PM.jpeg"
                 alt="Pratik Choksi"
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                className="w-full h-full object-cover hover:scale-105 transition-all duration-500"
               />
             </div>
             <h3 className="text-[#C9A84C] font-['Playfair_Display'] font-semibold text-[20px] mb-1">
