@@ -48,7 +48,7 @@ export const filmsData = [
   {
     title: 'Karsandas Pay & Use',
     platform: 'Gujarati Film',
-    poster: 'https://images.pexels.com/photos/9807283/pexels-photo-9807283.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    poster: 'https://customer-assets.emergentagent.com/job_entertainment-gold/artifacts/0ylnf1ey_9692668b-1c44-4654-b689-7b0ecd55a82b.jpg',
     releaseDate: '2017',
     genre: 'Comedy',
     role: 'Executive Producer — Pratik Choksi',
@@ -64,7 +64,7 @@ export const filmsData = [
   {
     title: 'Rang Jo Lagyo',
     platform: 'Coming Soon',
-    poster: 'https://images.pexels.com/photos/3137890/pexels-photo-3137890.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    poster: 'https://customer-assets.emergentagent.com/job_entertainment-gold/artifacts/ggoln5ii_WhatsApp%20Image%202026-04-08%20at%201.17_edited.jpg',
     comingSoon: true,
     role: 'First Assistant Direction — Neha Kshatriya',
   },
@@ -79,7 +79,7 @@ export const filmsData = [
   {
     title: 'Suryansh',
     platform: 'Gujarati Film',
-    poster: 'https://images.unsplash.com/photo-1635805737707-575885ab0820?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwyfHxtb3ZpZSUyMHBvc3RlcnxlbnwwfHx8fDE3NzU2NTI0MzZ8MA&ixlib=rb-4.1.0&q=85',
+    poster: 'https://customer-assets.emergentagent.com/job_entertainment-gold/artifacts/ah1serlj_WhatsApp%20Image%202026-04-08%20at%2011.38.09%20AM.jpeg',
     releaseDate: '2018',
     genre: 'Drama',
     role: 'Promotions — Pratik Choksi',
