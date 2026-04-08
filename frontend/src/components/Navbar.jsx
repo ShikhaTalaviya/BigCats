@@ -23,15 +23,15 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled ? 'bg-[#0A0A0A]' : 'bg-transparent'
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+          scrolled ? 'bg-[#0A0A0A] shadow-lg shadow-[#C9A84C]/5' : 'bg-transparent'
         }`}
       >
         <div className="max-w-[1400px] mx-auto px-4 md:px-6 py-4 md:py-5 flex items-center justify-between">
           <img
             src="https://customer-assets.emergentagent.com/job_entertainment-gold/artifacts/ge6i1qlo_2.png"
             alt="Big Cats Entertainment"
-            className="h-[40px] md:h-[50px] w-auto cursor-pointer"
+            className="h-[40px] md:h-[50px] w-auto cursor-pointer transform hover:scale-105 transition-transform duration-300"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           />
 
@@ -39,33 +39,37 @@ const Navbar = () => {
           <div className="hidden md:flex items-center gap-8">
             <button
               onClick={() => scrollToSection('films')}
-              className="text-white font-['Montserrat'] text-[12px] uppercase tracking-wide hover:text-[#C9A84C] transition-colors duration-300"
+              className="text-white font-['Montserrat'] text-[12px] uppercase tracking-wide hover:text-[#C9A84C] transition-all duration-300 relative group"
             >
               Work
+              <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#C9A84C] group-hover:w-full transition-all duration-300"></span>
             </button>
             <button
               onClick={() => scrollToSection('services')}
-              className="text-white font-['Montserrat'] text-[12px] uppercase tracking-wide hover:text-[#C9A84C] transition-colors duration-300"
+              className="text-white font-['Montserrat'] text-[12px] uppercase tracking-wide hover:text-[#C9A84C] transition-all duration-300 relative group"
             >
               Services
+              <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#C9A84C] group-hover:w-full transition-all duration-300"></span>
             </button>
             <button
               onClick={() => scrollToSection('founders')}
-              className="text-white font-['Montserrat'] text-[12px] uppercase tracking-wide hover:text-[#C9A84C] transition-colors duration-300"
+              className="text-white font-['Montserrat'] text-[12px] uppercase tracking-wide hover:text-[#C9A84C] transition-all duration-300 relative group"
             >
               About
+              <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#C9A84C] group-hover:w-full transition-all duration-300"></span>
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="text-white font-['Montserrat'] text-[12px] uppercase tracking-wide hover:text-[#C9A84C] transition-colors duration-300"
+              className="text-white font-['Montserrat'] text-[12px] uppercase tracking-wide hover:text-[#C9A84C] transition-all duration-300 relative group"
             >
               Contact
+              <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#C9A84C] group-hover:w-full transition-all duration-300"></span>
             </button>
           </div>
 
           {/* Mobile Hamburger */}
           <button
-            className="md:hidden text-[#C9A84C] text-2xl"
+            className="md:hidden text-[#C9A84C] text-2xl transform hover:scale-110 transition-transform duration-300"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             ☰
@@ -75,9 +79,9 @@ const Navbar = () => {
 
       {/* Mobile Menu Overlay */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 bg-[#0A0A0A] z-50 flex flex-col items-center justify-center">
+        <div className="fixed inset-0 bg-[#0A0A0A] z-50 flex flex-col items-center justify-center animate-fadeIn">
           <button
-            className="absolute top-6 right-6 text-[#C9A84C] text-3xl"
+            className="absolute top-6 right-6 text-[#C9A84C] text-3xl transform hover:rotate-90 transition-transform duration-300"
             onClick={() => setMobileMenuOpen(false)}
           >
             ×
@@ -85,25 +89,29 @@ const Navbar = () => {
           <div className="flex flex-col gap-8 text-center">
             <button
               onClick={() => scrollToSection('films')}
-              className="text-[#C9A84C] font-['Montserrat'] text-[18px] uppercase tracking-wide"
+              className="text-[#C9A84C] font-['Montserrat'] text-[18px] uppercase tracking-wide transform hover:scale-110 transition-all duration-300 animate-fadeInUp"
+              style={{ animationDelay: '0.1s' }}
             >
               Work
             </button>
             <button
               onClick={() => scrollToSection('services')}
-              className="text-[#C9A84C] font-['Montserrat'] text-[18px] uppercase tracking-wide"
+              className="text-[#C9A84C] font-['Montserrat'] text-[18px] uppercase tracking-wide transform hover:scale-110 transition-all duration-300 animate-fadeInUp"
+              style={{ animationDelay: '0.2s' }}
             >
               Services
             </button>
             <button
               onClick={() => scrollToSection('founders')}
-              className="text-[#C9A84C] font-['Montserrat'] text-[18px] uppercase tracking-wide"
+              className="text-[#C9A84C] font-['Montserrat'] text-[18px] uppercase tracking-wide transform hover:scale-110 transition-all duration-300 animate-fadeInUp"
+              style={{ animationDelay: '0.3s' }}
             >
               About
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="text-[#C9A84C] font-['Montserrat'] text-[18px] uppercase tracking-wide"
+              className="text-[#C9A84C] font-['Montserrat'] text-[18px] uppercase tracking-wide transform hover:scale-110 transition-all duration-300 animate-fadeInUp"
+              style={{ animationDelay: '0.4s' }}
             >
               Contact
             </button>

@@ -20,7 +20,7 @@ const AllFilms = () => {
         {filmsData.map((film, index) => (
           <div
             key={index}
-            className="bg-[#111111] border border-[#1C1C1C] rounded-sm overflow-hidden group hover:border-[#C9A84C] transition-all duration-300 opacity-0 animate-fadeIn hover:shadow-lg hover:shadow-[#C9A84C]/20"
+            className="bg-[#111111] border border-[#1C1C1C] rounded-sm overflow-hidden group hover:border-[#C9A84C] transition-all duration-500 opacity-0 animate-fadeIn hover-lift hover:shadow-2xl hover:shadow-[#C9A84C]/20"
             style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'forwards' }}
           >
             {/* Poster */}
@@ -28,16 +28,18 @@ const AllFilms = () => {
               <img
                 src={film.poster}
                 alt={film.title}
-                className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700 ease-out"
               />
               {film.comingSoon && (
-                <div className="absolute top-4 left-4 bg-[#C9A84C] text-[#0A0A0A] font-['Montserrat'] text-[10px] font-bold uppercase px-3 py-1.5 rounded-sm z-10">
+                <div className="absolute top-4 left-4 bg-[#C9A84C] text-[#0A0A0A] font-['Montserrat'] text-[10px] font-bold uppercase px-3 py-1.5 rounded-sm z-10 animate-float">
                   Coming Soon
                 </div>
               )}
-              <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+              <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 transform group-hover:rotate-12">
                 <ExternalLink className="w-5 h-5 text-[#C9A84C]" />
               </div>
+              {/* Overlay gradient on hover */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-500"></div>
             </div>
 
             {/* Info */}
@@ -63,12 +65,6 @@ const AllFilms = () => {
                   </div>
                 )}
               </div>
-
-              {film.genre && (
-                <div className="inline-block bg-[#C9A84C] bg-opacity-10 border border-[#C9A84C] text-[#C9A84C] font-['Montserrat'] text-[10px] md:text-[11px] px-3 py-1 rounded-full mb-2">
-                  {film.genre}
-                </div>
-              )}
 
               {film.role && (
                 <p className="text-[#777777] font-['Montserrat'] text-[10px] md:text-[11px] mt-3 line-clamp-2">
