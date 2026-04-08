@@ -79,7 +79,7 @@ export const filmsData = [
   {
     title: 'Suryansh',
     platform: 'Gujarati Film',
-    poster: 'https://customer-assets.emergentagent.com/job_entertainment-gold/artifacts/ah1serlj_WhatsApp%20Image%202026-04-08%20at%2011.38.09%20AM.jpeg',
+    poster: 'https://customer-assets.emergentagent.com/job_entertainment-gold/artifacts/svif1sy8_WhatsApp%20Image%202026-04-08%20at%2011.38.09%20AM.jpeg',
     releaseDate: '2018',
     genre: 'Drama',
     role: 'Promotions — Pratik Choksi',
