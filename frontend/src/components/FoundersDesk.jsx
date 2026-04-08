@@ -7,57 +7,44 @@ const FoundersDesk = () => {
         {/* Left - Text */}
         <div>
           <p className="text-[#C9A84C] font-['Montserrat'] font-bold text-[11px] uppercase tracking-[4px] mb-6">
-            Meet The Team
+            About Us
           </p>
           <h2 className="text-[#C9A84C] font-['Playfair_Display'] font-bold text-[42px] md:text-[48px] mb-8">
-            Founders' Desk
+            Our Story
           </h2>
 
           <div className="text-white font-['Montserrat'] text-[15px] leading-[1.8] space-y-6">
             <p>
-              <span className="text-[#C9A84C] font-semibold">Neha Kshatriya</span> and{' '}
-              <span className="text-[#C9A84C] font-semibold">Pratik Choksi</span> are the
-              founders of Big Cats Entertainment, a film production and content company based in
-              Ahmedabad.
+              Big Cats Entertainment is a film production and content company based in Ahmedabad, 
+              specializing in acquiring and syndicating Gujarati cinema across multiple platforms.
             </p>
 
             <p>
-              Neha brings directorial expertise — with credits including Farzi on Amazon Prime
-              Video, and key roles in Gujarati cinema.
+              We operate across the full content lifecycle — from creative development and production 
+              to strategic distribution and marketing. Our expertise spans theatrical releases, 
+              satellite television, digital streaming, and OTT platforms.
             </p>
 
             <p>
-              Pratik brings hands-on production experience across Gujarati films — from executive
-              production to line producing.
+              With a portfolio that includes acclaimed projects like Farzi on Amazon Prime Video 
+              and numerous successful Gujarati films, we bridge the gap between authentic regional 
+              storytelling and modern entertainment distribution.
             </p>
 
             <p>
-              Together they operate across the full content lifecycle — from development to
-              delivery.
+              Our mission is to deliver compelling cinema that resonates with audiences while 
+              supporting the growth of regional film industries through innovative content strategies.
             </p>
-
-            <button className="text-[#C9A84C] font-['Montserrat'] text-[13px] mt-4 hover:text-white transition-colors duration-300 inline-flex items-center gap-2">
-              Read More <span>→</span>
-            </button>
           </div>
         </div>
 
-        {/* Right - Photos */}
-        <div className="grid grid-cols-2 gap-6">
-          <div className="aspect-[3/4] overflow-hidden rounded-sm">
-            <img
-              src="https://images.pexels.com/photos/36363694/pexels-photo-36363694.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-              alt="Neha Kshatriya"
-              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
-            />
-          </div>
-          <div className="aspect-[3/4] overflow-hidden rounded-sm mt-12">
-            <img
-              src="https://images.pexels.com/photos/30732874/pexels-photo-30732874.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-              alt="Pratik Choksi"
-              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
-            />
-          </div>
+        {/* Right - Logo */}
+        <div className="flex items-center justify-center">
+          <img
+            src="https://customer-assets.emergentagent.com/job_entertainment-gold/artifacts/nh1dhity_1.png"
+            alt="Big Cats Entertainment"
+            className="w-full max-w-[500px] h-auto"
+          />
         </div>
       </div>
     </section>

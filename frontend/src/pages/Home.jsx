@@ -2,9 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import AllFilms from '../components/AllFilms';
-import FoundersDesk from '../components/FoundersDesk';
 import WhatWeDo from '../components/WhatWeDo';
-import About from '../components/About';
+import FoundersDesk from '../components/FoundersDesk';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
@@ -14,9 +13,8 @@ const Home = () => {
       <Navbar />
       <Hero />
       <AllFilms />
-      <FoundersDesk />
       <WhatWeDo />
-      <About />
+      <FoundersDesk />
       <Contact />
       <Footer />
     </div>

@@ -14,13 +14,6 @@ const Footer = () => {
         {/* Nav Links */}
         <div className="flex items-center justify-center gap-2 mb-8 flex-wrap">
           <button
-            onClick={() => scrollToSection('founders')}
-            className="text-white font-['Montserrat'] text-[12px] hover:text-[#C9A84C] transition-colors duration-300"
-          >
-            Founders
-          </button>
-          <span className="text-[#777777]">·</span>
-          <button
             onClick={() => scrollToSection('films')}
             className="text-white font-['Montserrat'] text-[12px] hover:text-[#C9A84C] transition-colors duration-300"
           >
@@ -28,7 +21,14 @@ const Footer = () => {
           </button>
           <span className="text-[#777777]">·</span>
           <button
-            onClick={() => scrollToSection('about')}
+            onClick={() => scrollToSection('services')}
+            className="text-white font-['Montserrat'] text-[12px] hover:text-[#C9A84C] transition-colors duration-300"
+          >
+            Services
+          </button>
+          <span className="text-[#777777]">·</span>
+          <button
+            onClick={() => scrollToSection('founders')}
             className="text-white font-['Montserrat'] text-[12px] hover:text-[#C9A84C] transition-colors duration-300"
           >
             About

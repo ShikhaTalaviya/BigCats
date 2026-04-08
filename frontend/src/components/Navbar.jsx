@@ -38,19 +38,19 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             <button
-              onClick={() => scrollToSection('founders')}
-              className="text-white font-['Montserrat'] text-[12px] uppercase tracking-wide hover:text-[#C9A84C] transition-colors duration-300"
-            >
-              Founders
-            </button>
-            <button
               onClick={() => scrollToSection('films')}
               className="text-white font-['Montserrat'] text-[12px] uppercase tracking-wide hover:text-[#C9A84C] transition-colors duration-300"
             >
               Work
             </button>
             <button
-              onClick={() => scrollToSection('about')}
+              onClick={() => scrollToSection('services')}
+              className="text-white font-['Montserrat'] text-[12px] uppercase tracking-wide hover:text-[#C9A84C] transition-colors duration-300"
+            >
+              Services
+            </button>
+            <button
+              onClick={() => scrollToSection('founders')}
               className="text-white font-['Montserrat'] text-[12px] uppercase tracking-wide hover:text-[#C9A84C] transition-colors duration-300"
             >
               About
@@ -84,19 +84,19 @@ const Navbar = () => {
           </button>
           <div className="flex flex-col gap-8 text-center">
             <button
-              onClick={() => scrollToSection('founders')}
-              className="text-[#C9A84C] font-['Montserrat'] text-[18px] uppercase tracking-wide"
-            >
-              Founders
-            </button>
-            <button
               onClick={() => scrollToSection('films')}
               className="text-[#C9A84C] font-['Montserrat'] text-[18px] uppercase tracking-wide"
             >
               Work
             </button>
             <button
-              onClick={() => scrollToSection('about')}
+              onClick={() => scrollToSection('services')}
+              className="text-[#C9A84C] font-['Montserrat'] text-[18px] uppercase tracking-wide"
+            >
+              Services
+            </button>
+            <button
+              onClick={() => scrollToSection('founders')}
               className="text-[#C9A84C] font-['Montserrat'] text-[18px] uppercase tracking-wide"
             >
               About
