@@ -11,7 +11,7 @@ export const filmsData = [
   {
     title: 'Umbro',
     platform: 'Gujarati Film',
-    poster: 'https://images.unsplash.com/photo-1616530940355-351fabd9524b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwzfHxtb3ZpZSUyMHBvc3RlcnxlbnwwfHx8fDE3NzU2NTI0MzZ8MA&ixlib=rb-4.1.0&q=85',
+    poster: 'https://customer-assets.emergentagent.com/job_entertainment-gold/artifacts/ewfvc21u_84cf1c11-ab6d-4020-a4cc-ed0657f4b72d.jpg',
     genre: 'Drama',
     role: 'Post Release Advisory — Pratik Choksi',
   },
