@@ -87,6 +87,3 @@ export const filmsData = [
     role: 'Promotions — Pratik Choksi',
   },
 ];
- Pratik Choksi',
-  },
-];
