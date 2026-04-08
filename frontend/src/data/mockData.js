@@ -71,7 +71,7 @@ export const filmsData = [
   {
     title: 'Family Circus',
     platform: 'Gujarati Film',
-    poster: 'https://customer-assets.emergentagent.com/job_entertainment-gold/artifacts/kxd6db79_Family_Circus_Official_Poster.jpg',
+    poster: 'https://customer-assets.emergentagent.com/job_entertainment-gold/artifacts/tubwor1u_WhatsApp%20Image%202026-04-09%20at%2012.32.27%20AM.jpeg',
     releaseDate: '2019',
     genre: 'Comedy',
     role: 'Promotions — Pratik Choksi',
