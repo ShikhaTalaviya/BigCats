@@ -31,7 +31,7 @@ const Navbar = () => {
           <img
             src="https://customer-assets.emergentagent.com/job_entertainment-gold/artifacts/15fuibcs_Big%20Cats%20Entertainment%20Logo%20Stylized%20Cat%20in%20Motion.png"
             alt="Big Cats Entertainment"
-            className="h-[45px] md:h-[55px] w-auto cursor-pointer transform hover:scale-105 transition-transform duration-300"
+            className="h-[60px] md:h-[80px] lg:h-[90px] w-auto cursor-pointer transform hover:scale-105 transition-transform duration-300"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           />
 
