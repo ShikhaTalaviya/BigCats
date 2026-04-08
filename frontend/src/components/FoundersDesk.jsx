@@ -16,25 +16,19 @@ const FoundersDesk = () => {
 
           <div className="text-white font-['Montserrat'] text-[14px] md:text-[15px] leading-[1.7] md:leading-[1.8] space-y-4 md:space-y-6">
             <p>
-              Big Cats Entertainment is a film production and content company based in Ahmedabad, 
-              specializing in acquiring and syndicating Gujarati cinema across multiple platforms.
+              Big Cats Entertainment is a film production and content company based in Ahmedabad, founded by Neha Kshatriya and Pratik Choksi.
             </p>
 
             <p>
-              We operate across the full content lifecycle — from creative development and production 
-              to strategic distribution and marketing. Our expertise spans theatrical releases, 
-              satellite television, digital streaming, and OTT platforms.
+              The company brings together a strong creative perspective with hands-on production expertise, enabling a seamless approach to filmmaking.
             </p>
 
             <p>
-              With a portfolio that includes acclaimed projects like Farzi on Amazon Prime Video 
-              and numerous successful Gujarati films, we bridge the gap between authentic regional 
-              storytelling and modern entertainment distribution.
+              Specializing in acquiring and syndicating Gujarati films, along with producing and executing projects, Big Cats operates across the content lifecycle from development to delivery.
             </p>
 
             <p>
-              Our mission is to deliver compelling cinema that resonates with audiences while 
-              supporting the growth of regional film industries through innovative content strategies.
+              Big Cats Entertainment connects audiences with cinema across theatrical release, satellite television, digital streaming, and OTT platforms.
             </p>
           </div>
         </div>
