@@ -48,8 +48,21 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <p className="text-[#777777] font-['Montserrat'] text-[10px] md:text-[11px] text-center">
+        <p className="text-[#777777] font-['Montserrat'] text-[10px] md:text-[11px] text-center mb-2">
           © 2025 Big Cats Entertainment. All Rights Reserved.
+        </p>
+
+        {/* Created by */}
+        <p className="text-[#777777] font-['Montserrat'] text-[9px] md:text-[10px] text-center">
+          Created by{' '}
+          <a
+            href="https://www.simploratech.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#C9A84C] hover:text-white transition-colors duration-300 hover:underline"
+          >
+            Simplora Tech Pvt. Ltd.
+          </a>
         </p>
       </div>
     </footer>
