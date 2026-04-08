@@ -26,35 +26,35 @@ const WhatWeDo = () => {
 
   return (
     <section id="services" className="py-20 px-6">
-      <div className="max-w-[1400px] mx-auto mb-12">
-        <h2 className="text-[#C9A84C] font-['Playfair_Display'] font-bold text-[38px] md:text-[48px]">
+      <div className="max-w-[1100px] mx-auto">
+        <h2 className="text-[#C9A84C] font-['Playfair_Display'] font-bold text-[38px] md:text-[48px] mb-12">
           What We Do
         </h2>
-      </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-0">
-        {services.map((service, index) => (
-          <div
-            key={index}
-            className="relative h-[320px] overflow-hidden group cursor-pointer"
-          >
-            {/* Background Image */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {services.map((service, index) => (
             <div
-              className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-              style={{ backgroundImage: `url(${service.image})` }}
-            ></div>
+              key={index}
+              className="relative h-[240px] overflow-hidden group cursor-pointer rounded-sm"
+            >
+              {/* Background Image */}
+              <div
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                style={{ backgroundImage: `url(${service.image})` }}
+              ></div>
 
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-black bg-opacity-60 group-hover:bg-opacity-40 transition-all duration-300"></div>
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black bg-opacity-75 group-hover:bg-opacity-70 transition-all duration-500"></div>
 
-            {/* Title */}
-            <div className="absolute inset-0 flex items-end justify-center pb-8">
-              <h3 className="text-[#C9A84C] group-hover:text-white font-['Playfair_Display'] font-semibold text-[22px] text-center px-4 transition-colors duration-300">
-                {service.title}
-              </h3>
+              {/* Title */}
+              <div className="absolute inset-0 flex items-center justify-center p-6">
+                <h3 className="text-[#C9A84C] font-['Playfair_Display'] font-semibold text-[20px] text-center transition-colors duration-300">
+                  {service.title}
+                </h3>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );
