@@ -18,7 +18,7 @@ export const filmsData = [
   {
     title: 'Hari Om Hurry',
     platform: 'Gujarati Film',
-    poster: 'https://images.unsplash.com/photo-1509347528160-9a9e33742cdb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHw0fHxtb3ZpZSUyMHBvc3RlcnxlbnwwfHx8fDE3NzU2NTI0MzZ8MA&ixlib=rb-4.1.0&q=85',
+    poster: 'https://customer-assets.emergentagent.com/job_entertainment-gold/artifacts/ggk6w3bl_WhatsApp%20Image%202026-04-08%20at%201.41.34%20PM.jpeg',
     genre: 'Drama',
     role: 'Post Release Advisory — Pratik Choksi',
   },
