@@ -25,7 +25,7 @@ export const filmsData = [
   {
     title: 'Shu Thayu?',
     platform: 'Gujarati Film',
-    poster: 'https://images.pexels.com/photos/12838778/pexels-photo-12838778.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    poster: 'https://customer-assets.emergentagent.com/job_entertainment-gold/artifacts/dw87l8ov_Shu_Thayu_%28film%29_Poster.jpg',
     releaseDate: '2018',
     genre: 'Drama',
     role: 'Executive Producer — Pratik Choksi / Assistant Direction — Neha Kshatriya',
