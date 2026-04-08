@@ -1,6 +1,9 @@
 import React from 'react';
+import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const WhatWeDo = () => {
+  const [ref, isVisible] = useScrollAnimation(0.2);
+
   const services = [
     {
       title: 'Film Production',
@@ -25,9 +28,9 @@ const WhatWeDo = () => {
   ];
 
   return (
-    <section id="services" className="py-20 px-6">
+    <section id="services" className="py-20 px-6" ref={ref}>
       <div className="max-w-[1100px] mx-auto">
-        <h2 className="text-[#C9A84C] font-['Playfair_Display'] font-bold text-[38px] md:text-[48px] mb-12">
+        <h2 className={`text-[#C9A84C] font-['Playfair_Display'] font-bold text-[38px] md:text-[48px] mb-12 transition-all duration-800 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           What We Do
         </h2>
 
@@ -35,7 +38,8 @@ const WhatWeDo = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="relative h-[240px] overflow-hidden group cursor-pointer rounded-sm"
+              className={`relative h-[240px] overflow-hidden group cursor-pointer rounded-sm transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+              style={{ transitionDelay: `${index * 100}ms` }}
             >
               {/* Background Image */}
               <div

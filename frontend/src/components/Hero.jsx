@@ -3,6 +3,7 @@ import { ChevronDown } from 'lucide-react';
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   const slides = [
     'https://images.unsplash.com/photo-1591314222191-61fad06f4428',
@@ -11,6 +12,7 @@ const Hero = () => {
   ];
 
   useEffect(() => {
+    setIsLoaded(true);
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 4000);
@@ -45,7 +47,7 @@ const Hero = () => {
 
       {/* Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
-        <p className="text-white font-['Montserrat'] text-[22px] md:text-[28px] text-center px-4 max-w-[800px] leading-relaxed">
+        <p className={`text-white font-['Montserrat'] text-[22px] md:text-[28px] text-center px-4 max-w-[800px] leading-relaxed transition-all duration-1000 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           Building and delivering cinema across platforms.
         </p>
       </div>

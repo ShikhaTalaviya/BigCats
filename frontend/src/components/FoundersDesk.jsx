@@ -1,12 +1,15 @@
 import React from 'react';
 import { ExternalLink } from 'lucide-react';
+import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const FoundersDesk = () => {
+  const [ref, isVisible] = useScrollAnimation(0.2);
+
   return (
-    <section id="founders" className="py-20 px-6 max-w-[1400px] mx-auto">
+    <section id="founders" className="py-20 px-6 max-w-[1400px] mx-auto" ref={ref}>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         {/* Left - Text */}
-        <div>
+        <div className={`transition-all duration-800 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
           <p className="text-[#C9A84C] font-['Montserrat'] font-bold text-[11px] uppercase tracking-[4px] mb-6">
             About Us
           </p>
@@ -40,7 +43,7 @@ const FoundersDesk = () => {
         </div>
 
         {/* Right - Founders */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className={`grid grid-cols-1 sm:grid-cols-2 gap-8 transition-all duration-800 delay-200 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
           {/* Neha Kshatriya */}
           <div className="text-center">
             <div className="aspect-[3/4] overflow-hidden rounded-sm mb-4">
