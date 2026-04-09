@@ -44,6 +44,7 @@ export const filmsData = [
     title: 'Ventilator',
     platform: 'Gujarati Film',
     poster: 'https://customer-assets.emergentagent.com/job_entertainment-gold/artifacts/rpbcivah_MV5BM2Y1NjExOTUtMmIxNC00ZDZhLWJiY2QtODYxMWJhNWQzZWY5XkEyXkFqcGc%40._V1_FMjpg_UX1000_.jpg',
+    releaseDate: '2018',
     genre: 'Drama',
     role: 'Post Release Advisory — Pratik Choksi',
   },
