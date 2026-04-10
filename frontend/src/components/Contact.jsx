@@ -36,8 +36,9 @@ const Contact = () => {
             </h3>
             <div className="text-white font-['Montserrat'] text-[13px] md:text-[14px] leading-relaxed space-y-1">
               <p className="font-semibold">Big Cats Entertainment</p>
-              <p>Sarkari Vasahat Road,</p>
-              <p>Bodakdev, Ahmedabad – 380052</p>
+              <p>4, Chandragupt apt,</p>
+              <p>Ambawadi,</p>
+              <p>Ahmedabad 380015</p>
               <p>India</p>
               <a 
                 href="tel:+919824844777"
