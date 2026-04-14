@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { ChevronDown } from 'lucide-react';
+import React, { useState, useEffect, useCallback } from 'react';
+
+const CAROUSEL_INTERVAL_MS = 4000;
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -12,22 +13,23 @@ const Hero = () => {
     'https://images.pexels.com/photos/17711641/pexels-photo-17711641.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
   ];
 
+  const handleScroll = useCallback(() => {
+    setScrollY(window.scrollY);
+  }, []);
+
   useEffect(() => {
     setIsLoaded(true);
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 4000);
+    }, CAROUSEL_INTERVAL_MS);
 
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
     window.addEventListener('scroll', handleScroll);
 
     return () => {
       clearInterval(interval);
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [slides.length, handleScroll]);
 
   const scrollToFilms = () => {
     const element = document.getElementById('films');
@@ -41,7 +43,7 @@ const Hero = () => {
       {/* Slideshow with parallax */}
       {slides.map((slide, index) => (
         <div
-          key={index}
+          key={slide}
           className={`absolute inset-0 transition-opacity duration-1500 ${
             index === currentSlide ? 'opacity-100' : 'opacity-0'
           }`}

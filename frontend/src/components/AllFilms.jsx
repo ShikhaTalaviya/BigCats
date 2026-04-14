@@ -19,7 +19,7 @@ const AllFilms = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {filmsData.map((film, index) => (
           <div
-            key={index}
+            key={`${film.title}-${film.releaseDate || index}`}
             className="bg-[#111111] border border-[#1C1C1C] rounded-sm overflow-hidden group hover:border-[#C9A84C] transition-all duration-500 opacity-0 animate-fadeIn hover-lift hover:shadow-2xl hover:shadow-[#C9A84C]/20"
             style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'forwards' }}
           >

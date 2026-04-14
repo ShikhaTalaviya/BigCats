@@ -37,7 +37,7 @@ const WhatWeDo = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {services.map((service, index) => (
             <div
-              key={index}
+              key={service.title}
               className={`relative h-[200px] md:h-[240px] overflow-hidden group cursor-pointer rounded-sm transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
