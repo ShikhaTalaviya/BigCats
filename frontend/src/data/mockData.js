@@ -10,7 +10,7 @@ export const filmsData = [
     link: 'https://youtu.be/rcQ_xZdzPBc?si=9H_7AxzCCNxNof09',
   },
   {
-    title: 'Ubarro',
+    title: 'Umbarro',
     platform: 'Gujarati Film',
     poster: 'https://customer-assets.emergentagent.com/job_entertainment-gold/artifacts/ewfvc21u_84cf1c11-ab6d-4020-a4cc-ed0657f4b72d.jpg',
     releaseDate: '2025',
