@@ -35,9 +35,17 @@ const AllFilms = () => {
                   Coming Soon
                 </div>
               )}
-              <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 transform group-hover:rotate-12">
-                <ExternalLink className="w-5 h-5 text-[#C9A84C]" />
-              </div>
+              {film.link && (
+                <a
+                  href={film.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 transform group-hover:rotate-12 hover:scale-125"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <ExternalLink className="w-5 h-5 text-[#C9A84C]" />
+                </a>
+              )}
               {/* Overlay gradient on hover */}
               <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-500"></div>
             </div>

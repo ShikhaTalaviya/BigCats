@@ -7,6 +7,7 @@ export const filmsData = [
     releaseDate: '2023',
     genre: 'Thriller',
     role: 'Assistant Director — Neha Kshatriya',
+    link: 'https://youtu.be/rcQ_xZdzPBc?si=9H_7AxzCCNxNof09',
   },
   {
     title: 'Ubarro',
@@ -15,6 +16,7 @@ export const filmsData = [
     releaseDate: '2025',
     genre: 'Drama',
     role: 'Post Release Advisory — Pratik Choksi',
+    link: 'https://youtu.be/SDXOE7kk6pE?si=-Jmxqul5o37EQEsM',
   },
   {
     title: 'Hurry Om Hurry',
@@ -23,6 +25,7 @@ export const filmsData = [
     releaseDate: '2023',
     genre: 'Drama',
     role: 'Post Release Advisory — Pratik Choksi',
+    link: 'https://youtu.be/QoiqXCf-kiA?si=_H7TskymKrtk_PGM',
   },
   {
     title: 'Shu Thayu?',
@@ -31,6 +34,7 @@ export const filmsData = [
     releaseDate: '2018',
     genre: 'Drama',
     role: 'Assistant Director — Neha Kshatriya\nExecutive Producer — Pratik Choksi',
+    link: 'https://m.imdb.com/title/tt8831284/?ref_=ext_shr_lnk',
   },
   {
     title: 'Vandha Villas',
@@ -39,6 +43,7 @@ export const filmsData = [
     releaseDate: '2018',
     genre: 'Drama',
     role: 'Assistant Director — Neha Kshatriya\nExecutive Producer — Pratik Choksi',
+    link: 'https://m.imdb.com/title/tt8422610/?ref_=ext_shr_lnk',
   },
   {
     title: 'Ventilator',
@@ -47,6 +52,7 @@ export const filmsData = [
     releaseDate: '2018',
     genre: 'Drama',
     role: 'Post Release Advisory — Pratik Choksi',
+    link: 'https://youtu.be/zlnsxTuef98?si=6Xxxoa-r8CIZ1zdU',
   },
   {
     title: 'Karsandas Pay & Use',
@@ -55,6 +61,7 @@ export const filmsData = [
     releaseDate: '2017',
     genre: 'Comedy',
     role: 'Executive Producer — Pratik Choksi',
+    link: 'https://m.imdb.com/title/tt6771678/?ref_=ext_shr_lnk',
   },
   {
     title: 'Days of Tafree',
@@ -63,6 +70,7 @@ export const filmsData = [
     releaseDate: '2016',
     genre: 'Comedy',
     role: 'Line Producer — Pratik Choksi',
+    link: 'https://youtu.be/F2kUYPANFKs?si=Ps0mV3ZRUTLHEPnZ',
   },
   {
     title: 'Rang Jo Lagyo',
@@ -78,6 +86,7 @@ export const filmsData = [
     releaseDate: '2019',
     genre: 'Comedy',
     role: 'Promotions — Pratik Choksi',
+    link: 'https://youtu.be/bjYqWq9sIZE?si=sr238Q9SvtM3D0nL',
   },
   {
     title: 'Suryansh',
@@ -86,5 +95,6 @@ export const filmsData = [
     releaseDate: '2018',
     genre: 'Drama',
     role: 'Promotions — Pratik Choksi',
+    link: 'https://youtu.be/ro8x_DQbrGw?si=6lAqA-SshvwAQEUW',
   },
 ];
