@@ -35,26 +35,29 @@ const AllFilms = () => {
                   Coming Soon
                 </div>
               )}
-              {film.link && (
-                <a
-                  href={film.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 transform group-hover:rotate-12 hover:scale-125"
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  <ExternalLink className="w-5 h-5 text-[#C9A84C]" />
-                </a>
-              )}
               {/* Overlay gradient on hover */}
               <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-500"></div>
             </div>
 
             {/* Info */}
             <div className="p-4">
-              <h3 className="text-[#C9A84C] font-['Playfair_Display'] font-semibold text-[16px] md:text-[18px] mb-2 line-clamp-1">
-                {film.title}
-              </h3>
+              <div className="flex items-center justify-between mb-2 gap-2">
+                <h3 className="text-[#C9A84C] font-['Playfair_Display'] font-semibold text-[16px] md:text-[18px] line-clamp-1 flex-1">
+                  {film.title}
+                </h3>
+                {film.link && (
+                  <a
+                    href={film.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-[#C9A84C] hover:bg-white text-[#0A0A0A] font-['Montserrat'] text-[10px] md:text-[11px] font-semibold uppercase px-3 py-1.5 rounded-sm transition-all duration-300 whitespace-nowrap flex items-center gap-1"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <ExternalLink className="w-3 h-3" />
+                    Trailer
+                  </a>
+                )}
+              </div>
               <p className="text-white font-['Montserrat'] text-[11px] md:text-[12px] mb-3 line-clamp-1">
                 {film.platform}
               </p>
